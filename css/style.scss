@@ -1,6 +1,6 @@
 $primary: #362a2a;
-
-
+$secondary: rgba(53, 164, 216, 0);
+$font1: Roboto, Arial, Verdana;
 
 
 * {
@@ -13,31 +13,21 @@ $primary: #362a2a;
     background-color: $primary;
 }
   
-  header {
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    background-color: black;
-    nav {
-        float: right;
-        ul {
-            li {
-                padding-right: 15px;
-                padding-top: 42px;
-                display: inline-block;
-                a {
-                    text-decoration: none;
-                    padding-inline: 7px;
-                    color: antiquewhite;
-                    &:hover {
-                        transition: 200ms;
-                        color: #f27218;
-                    }
+    .navbar {
+        background-color: $primary;
+        .navbar-collapse {
+
+            .navbar-item {
+                font: $font1;
+                color: white;
+                &:hover {
+                    color: $secondary;
                 }
             }
+
         }
     }
-   }
+
    .principal {
     text-align: center;
    }

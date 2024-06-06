@@ -1,35 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
+  font-family: Roboto, Arial, Helvetica, sans-serif; }
 
 body {
-  background-color: #362a2a;
-}
+  background-color: #362a2a; }
 
 .navbar {
-  background-color: #362a2a;
-}
-.navbar .navbar-collapse .navbar-item {
-  font: Roboto, Arial, Verdana;
-  color: white;
-}
-.navbar .navbar-collapse .navbar-item:hover {
-  color: rgba(53, 164, 216, 0);
-}
+  background-color: #362a2a; }
+  .navbar .nav-link {
+    color: white; }
+    .navbar .nav-link:hover {
+      color: rgba(53, 164, 216, 0); }
+  .navbar .navbar-brand, .navbar img {
+    height: 100px;
+    width: 100px; }
 
 .principal {
-  text-align: center;
-}
+  text-align: center; }
 
 footer {
   text-align: center;
+  font: 12px;
   bottom: 0;
   position: fixed;
   width: 100%;
   background-color: black;
-  color: antiquewhite;
-}
+  color: antiquewhite; }
 
 /*# sourceMappingURL=style.css.map */

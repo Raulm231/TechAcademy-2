@@ -15,16 +15,16 @@ $font1: Roboto, Arial, Verdana;
   
     .navbar {
         background-color: $primary;
-        .navbar-collapse {
+        .nav-link {
+            color: white;
 
-            .navbar-item {
-                font: $font1;
-                color: white;
-                &:hover {
-                    color: $secondary;
-                }
+            &:hover {
+                color: $secondary;
             }
-
+        }
+        .navbar-brand, img {
+            height: 100px;
+            width: 100px;
         }
     }
 
@@ -34,6 +34,7 @@ $font1: Roboto, Arial, Verdana;
   
   footer {
     text-align: center;
+    font: 12px ;
     bottom: 0;
     position: fixed;
     width: 100%; 

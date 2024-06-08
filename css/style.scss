@@ -1,44 +1,58 @@
-$primary: #362a2a;
-$secondary: rgba(53, 164, 216, 0);
+$primary: #161616;
+$secondary: #b00c3d;
 $font1: Roboto, Arial, Verdana;
-
+$fontColor1: rgb(255, 255, 255);
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif; 
- }
-  
-  body {
-    background-color: $primary;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-  
-    .navbar {
-        background-color: $primary;
-        .nav-link {
-            color: white;
 
-            &:hover {
-                color: $secondary;
+
+body {
+    background-color: $primary;
+    .principal {
+        text-align: center;
+    }
+}
+
+.navbar {
+    background-color: $primary;
+    box-sizing: border-box;
+    box-shadow: 0 1px 10px #161616;
+    position: fixed;
+    .navbar-nav {
+        padding-left: 80%;
+        width: auto;
+        .nav-item {            
+            .nav-link {
+                color: $fontColor1;
+
+                &:hover {
+                    color: $secondary;
+                }
             }
         }
-        .navbar-brand, img {
-            height: 100px;
-            width: 100px;
-        }
     }
+}
 
-   .principal {
+
+footer {
     text-align: center;
-   }
-  
-  footer {
-    text-align: center;
-    font: 12px ;
     bottom: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #161616;
     position: fixed;
-    width: 100%; 
-    background-color: black;
-    color: antiquewhite;
+    width: 100%;
+    background-color: $primary;
+    color: $fontColor1;
+    h3 {
+        font-size: 22px;
+
     }
-  
+}
+
+@media (min-width: 300px) and (max-width: 1920px) {
+    
+}

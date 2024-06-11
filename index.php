@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+
     <link rel="icon" href="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +19,11 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">
-        <img src="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png" width="70px" height="75px">
-    </a>
+  <div class="container-fluid" href="index.php">
+    <img src="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png" width="70px" height="75px">
+
+    <a class="navbar-brand" href="index.php">PHOENIX</a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,7 +37,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            GAMES
+            Games
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Desordeon</a></li>
@@ -66,5 +68,6 @@
     <footer>
         <h3>Site desenvolvido por Raul Miguel<h3>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

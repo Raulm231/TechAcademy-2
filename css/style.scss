@@ -1,5 +1,6 @@
 $primary: #161616;
-$secondary: #b00c3d;
+$secondary: #c81a4e;
+$colorMenu: #181818;
 $font1: Roboto, Arial, Verdana;
 $fontColor1: rgb(255, 255, 255);
 
@@ -12,6 +13,7 @@ $fontColor1: rgb(255, 255, 255);
 
 body {
     background-color: $primary;
+
     .principal {
         text-align: center;
     }
@@ -22,20 +24,56 @@ body {
     box-sizing: border-box;
     box-shadow: 0 1px 10px #161616;
     position: fixed;
-    .navbar-nav {
-        padding-left: 80%;
-        width: auto;
-        .nav-item {            
-            .nav-link {
-                color: $fontColor1;
 
-                &:hover {
-                    color: $secondary;
+        .navbar-brand {
+            color: $fontColor1;
+            font-weight: bold;
+            padding-left: 15px;
+            &:hover {
+                color: $fontColor1;
+            }
+
+        }
+
+        .navbar-toggler {
+            background-color: $fontColor1;
+            }
+
+
+        .navbar-nav {
+            width: auto;
+
+            .nav-item {
+                float: right;
+
+                .nav-link {
+                    color: $fontColor1;
+                    &:hover {
+                        animation: color-change 5s infinite ease-in;
+                    }
+                }
+
+                .dropdown-menu {
+                    background: $colorMenu;
+                    border-radius: 0px 0px 10px 10px;
+                    box-sizing: border-box;
+                    border-top: 4px solid $fontColor1;
+                    .dropdown-item {
+                        color: $fontColor1;
+                        transition: 0.5ms;
+                        &:hover {
+                            transition: 0.5ms;
+                            background: #121212;
+                            color: $secondary !important;
+                            font-weight: bolder;
+                        }
+
+                    }
                 }
             }
         }
     }
-}
+
 
 
 footer {
@@ -47,12 +85,29 @@ footer {
     width: 100%;
     background-color: $primary;
     color: $fontColor1;
+
     h3 {
         font-size: 22px;
 
     }
 }
 
-@media (min-width: 300px) and (max-width: 1920px) {
-    
+@media (min-width: 1200px) and (max-width: 2300px) {
+
+
+}
+
+@keyframes color-change {
+    0% {
+        color: #f5691d;
+    }
+    33% {
+        color: #d9182e;
+    }
+    66% {
+        color: #b50b3b;
+    }
+    99% {
+        color: #591148;
+    }
 }

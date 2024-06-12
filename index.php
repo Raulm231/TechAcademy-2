@@ -30,10 +30,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="index.php?pagina=home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="quemsomos.php">Quem Somos</a>
+          <a class="nav-link" href="index.php?pagina=quemsomos">Quem Somos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,23 +50,25 @@
   </div>
 </nav>
     <main>
-        <php?
+        <?php
+
+        $pagina = $_GET["pagina"] ?? "home";
+
+        $pagina = "paginas/{$pagina}.php";
+
+        if (file_exists($pagina)) {
+          include $pagina;
+        } else {
+          include "paginas/erro.php";
+        }
+        
 
 
-        ?php>
+        ?>
     </main>
-    <br>
-    <section id="principal">
-    <h1>Seja Bem Vindo ao PHOENIX</h1>
-    <br>
-    <p>Aqui é o lugar onde você pode encontrar os melhores jogos:</p>
-    <section>
-        <div class="Imagens">
-            <img src="" alt="">
-        <div>
 
     <footer>
-        <h3>Site desenvolvido por Raul Miguel<h3>
+        <h3>Site desenvolvido por - Raul Miguel<h3>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -27,6 +27,11 @@ body .principal {
 }
 .navbar .navbar-toggler {
   background-color: white;
+  transition: 0.4s;
+}
+.navbar .navbar-toggler:active {
+  transition: 0.4s;
+  background-color: #1a1a1a;
 }
 .navbar .navbar-nav {
   width: auto;

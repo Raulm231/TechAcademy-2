@@ -37,6 +37,11 @@ body {
 
         .navbar-toggler {
             background-color: $fontColor1;
+            transition: 0.4s;
+                &:active {
+                    transition: 0.4s;
+                    background-color: #1a1a1a;
+                }
             }
 
 

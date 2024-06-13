@@ -1,3 +1,3 @@
-<div class="container">
-    <h1>ERRO 404 - Página não encontrada</h1>
+<div class="paginaErro">
+    <img src="imagens/error-404-2.png" alt="ERRO 404">
 </div>

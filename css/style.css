@@ -4,18 +4,21 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: #161616;
+html {
+  background: #2e2e2e;
 }
-body .principal {
-  text-align: center;
+
+main {
+  background-color: #2e2e2e;
 }
 
 .navbar {
   background-color: #161616;
   box-sizing: border-box;
   box-shadow: 0 1px 10px #161616;
-  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
 .navbar .navbar-brand {
   color: white;
@@ -62,18 +65,45 @@ body .principal {
   font-weight: bolder;
 }
 
+.paginaErro {
+  padding-top: 9%;
+  text-align: center;
+}
+
+.pghome {
+  font-weight: bold;
+  color: white;
+}
+.pghome h2 {
+  padding-left: 5%;
+  font-size: 21px;
+}
+.pghome h3 {
+  font-size: 21px;
+  padding-left: 5%;
+}
+.pghome .carousel-inner {
+  width: 100%;
+}
+
+.divisao {
+  text-align: center;
+  padding-bottom: 1%;
+  color: white;
+}
+
 footer {
   text-align: center;
   bottom: 0;
   box-sizing: border-box;
   box-shadow: 0 0 10px #161616;
-  position: fixed;
   width: 100%;
+  padding: 10px;
   background-color: #161616;
   color: white;
 }
 footer h3 {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 @keyframes color-change {

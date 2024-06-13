@@ -10,20 +10,21 @@ $fontColor1: rgb(255, 255, 255);
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+html {
+    background: #2e2e2e;
+}
 
-body {
-    background-color: $primary;
-
-    .principal {
-        text-align: center;
-    }
+main {
+    background-color: #2e2e2e;
 }
 
 .navbar {
     background-color: $primary;
     box-sizing: border-box;
     box-shadow: 0 1px 10px #161616;
-    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
 
         .navbar-brand {
             color: $fontColor1;
@@ -79,21 +80,48 @@ body {
         }
     }
 
+    .paginaErro {
+        padding-top: 9%;
+        text-align: center;
+    }
 
+    .pghome {
+        font-weight: bold;
+        color: $fontColor1;
+        h2 {
+            
+            padding-left: 5%;
+            font-size: 21px;
+        }   
+        h3 {
+            font-size: 21px;
+            padding-left: 5%;
+        }     
+            .carousel-inner {
+                width: 100%;
+            }
+    }
+
+
+
+.divisao {
+    text-align: center;
+    padding-bottom: 1%;
+    color: $fontColor1;
+}
 
 footer {
     text-align: center;
     bottom: 0;
     box-sizing: border-box;
     box-shadow: 0 0 10px #161616;
-    position: fixed;
     width: 100%;
+    padding: 10px;
     background-color: $primary;
     color: $fontColor1;
 
     h3 {
-        font-size: 22px;
-
+        font-size: 21px;
     }
 }
 

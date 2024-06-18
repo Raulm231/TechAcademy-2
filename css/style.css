@@ -4,6 +4,56 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5691d;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8a4b;
+}
+
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #f5691d, #d9182e, #b50b3b, #591148);
+  box-shadow: 0 4px 10px 0 rgba(229, 66, 10, 0.75);
+  float: right;
+}
+
+.btn-hover {
+  width: 190px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
 html {
   background: #2e2e2e;
 }
@@ -65,6 +115,22 @@ main {
   font-weight: bolder;
 }
 
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-toggle::after {
+  transition: 0.4s;
+}
+
+.carousel-inner {
+  width: 72%;
+  margin: 0 auto;
+}
+.carousel-inner .carousel-item img {
+  border-radius: 15px;
+}
+
 .paginaErro {
   padding-top: 9%;
   text-align: center;
@@ -81,9 +147,6 @@ main {
 .pghome h3 {
   font-size: 21px;
   padding-left: 5%;
-}
-.pghome .carousel-inner {
-  width: 100%;
 }
 
 .divisao {

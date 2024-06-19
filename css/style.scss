@@ -28,22 +28,21 @@ $fontColor1: rgb(255, 255, 255);
 
 .btn-hover.color-2 {
     background-image: linear-gradient(to right, #f5691d, #d9182e, #b50b3b, #591148);
-    box-shadow: 0 4px 10px 0 rgba(229, 66, 10, 0.75);
     float: right;
 }
 .btn-hover {
-    width: 190px;
+    width: 150px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     margin: 20px;
-    height: 55px;
+    height: 45px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
 
-    border-radius: 50px;
+    border-radius: 9px;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -75,11 +74,13 @@ main {
     top: 0;
     width: 100%;
     z-index: 9;
+    padding-left: 0.5%;
 
         .navbar-brand {
             color: $fontColor1;
             font-weight: bold;
-            padding-left: 15px;
+            font-size: 24px;
+            padding-left: 6px;
             &:hover {
                 color: $fontColor1;
             }
@@ -104,6 +105,7 @@ main {
 
                 .nav-link {
                     color: $fontColor1;
+                    
                     &:hover {
                         animation: color-change 5s infinite ease-in;
                     }
@@ -147,7 +149,6 @@ main {
     }
 
     .paginaErro {
-        padding-top: 9%;
         text-align: center;
     }
 

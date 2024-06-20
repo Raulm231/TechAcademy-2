@@ -1,3 +1,13 @@
+<?php
+$url = "http://localhost/droga/TechAcademy-2/api/banners.php";
+
+$dadosApi = file_get_contents($url);
+
+$dadosBanner = json_decode($dadosApi);
+
+//print_r($dadosBanner);
+?>
+
 <div class="pghome">
 
     <br>
@@ -13,15 +23,17 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imagens/Des-Banner.png" class="d-block w-100" alt="Desordeon">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/red dead 3.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
+            <?php
+            foreach ($dadosBanner as $dados) {
+            ?>
+                <div class="carousel-item active">
+                    <a href="game/<?= $dados->id_game ?>">
+                        <img src="<?= $dados->imagem ?>" class="d-block w-100" alt="<?= $dados->nome ?>">
+                    </a>
+                </div>
+            <?php
+            }
+            ?>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -45,10 +57,6 @@
             <p class="card-text">Crimson Curse</p>
         </div>
     </div>
-
-
-
-    <div class="divisao">
-        <p>____________________________________________________________________</p>
-    </div>
+<br>
+<br>
 </div>

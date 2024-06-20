@@ -13,32 +13,38 @@ $fontColor1: rgb(255, 255, 255);
 ::-webkit-scrollbar {
     width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #f5691d;
     border-radius: 10px;
+
     &:hover {
-    background: #ff8a4b;
+        background: #ff8a4b;
     }
 }
+
 ::-webkit-scrollbar-track {
     background: $colorMenu;
 }
 
+.btn-contato {
+    list-style: none;
+}
 
 
 .btn-hover.color-2 {
     background-image: linear-gradient(to right, #f5691d, #d9182e, #b50b3b, #591148);
     float: right;
 }
+
 .btn-hover {
     width: 150px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
-    cursor: pointer;
     margin: 20px;
     height: 45px;
-    text-align:center;
+    text-align: center;
     border: none;
     background-size: 300% 100%;
 
@@ -76,95 +82,128 @@ main {
     z-index: 9;
     padding-left: 0.5%;
 
-        .navbar-brand {
-            color: $fontColor1;
-            font-weight: bold;
-            font-size: 24px;
-            padding-left: 6px;
-            &:hover {
-                color: $fontColor1;
-            }
-
-        }
-
-        .navbar-toggler {
-            background-color: $fontColor1;
-            transition: 0.4s;
-                &:active {
-                    transition: 0.4s;
-                    background-color: #1a1a1a;
-                }
-            }
-
-
-        .navbar-nav {
-            width: auto;
-
-            .nav-item {
-                float: right;
-
-                .nav-link {
-                    color: $fontColor1;
-                    
-                    &:hover {
-                        animation: color-change 5s infinite ease-in;
-                    }
-                }
-
-                .dropdown-menu {
-                    background: $colorMenu;
-                    border-radius: 0px 0px 10px 10px;
-                    box-sizing: border-box;
-                    border-top: 4px solid $fontColor1;
-                    .dropdown-item {
-                        color: $fontColor1;
-                        transition: 0.5ms;
-                        &:hover {
-                            transition: 0.5ms;
-                            background: #121212;
-                            color: $secondary !important;
-                            font-weight: bolder;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-
-    .dropdown-toggle[aria-expanded="true"]::after {
-        transform: rotate(180deg);
-    }
-
-    .dropdown-toggle::after {
-        transition: 0.4s;
-    }
-
-    .carousel-inner {
-        width: 72%;
-        margin: 0 auto;
-        .carousel-item img{
-            border-radius: 15px;
-        }
-    }
-
-    .paginaErro {
-        text-align: center;
-    }
-
-    .pghome {
-        font-weight: bold;
+    .navbar-brand {
         color: $fontColor1;
-        h2 {
-            
-            padding-left: 5%;
-            font-size: 21px;
-        }   
-        h3 {
-            font-size: 21px;
-            padding-left: 5%;
-        }     
+        font-weight: bold;
+        font-size: 24px;
+        padding-left: 6px;
+
+        &:hover {
+            color: $fontColor1;
+        }
+
     }
+
+    .navbar-toggler {
+        background-color: $fontColor1;
+        transition: 0.4s;
+
+        &:active {
+            transition: 0.4s;
+            background-color: #1a1a1a;
+        }
+    }
+
+
+    .navbar-nav {
+        width: auto;
+
+        .nav-item {
+            float: right;
+
+            .nav-link {
+                color: $fontColor1;
+
+                &:hover {
+                    animation: color-change 5s infinite ease-in;
+                }
+            }
+
+            .dropdown-menu {
+                background: $colorMenu;
+                border-radius: 0px 0px 10px 10px;
+                box-sizing: border-box;
+                border-top: 4px solid $fontColor1;
+
+                .dropdown-item {
+                    color: $fontColor1;
+                    transition: 0.5ms;
+
+                    &:hover {
+                        transition: 0.5ms;
+                        background: #121212;
+                        color: $secondary !important;
+                        font-weight: bolder;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-toggle::after {
+    transition: 0.4s;
+}
+
+.carousel-inner {
+    width: 72%;
+    margin: 0 auto;
+
+    .carousel-item img {
+        border-radius: 15px;
+    }
+}
+
+.paginaErro {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    img {
+        padding-bottom: 50px;
+        width: 38%;
+    }
+
+    a {
+
+        border-radius: 16px;
+        text-decoration: none;
+        padding: 15px;
+        background: #f5691d;
+        color: $fontColor1;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f5691d;
+            background: $fontColor1;
+            transition: 0.5s;
+            padding: 20px;
+            border-radius: 22px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+.pghome {
+    font-weight: bold;
+    color: $fontColor1;
+
+    h2 {
+
+        padding-left: 5%;
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 21px;
+        padding-left: 5%;
+    }
+}
 
 
 
@@ -173,6 +212,7 @@ main {
     padding-bottom: 1%;
     color: $fontColor1;
 }
+
 
 footer {
     text-align: center;
@@ -189,22 +229,34 @@ footer {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 2300px) {
+@media (min-width: 120px) and (max-width: 430px) {
+    .paginaErro {
+        img {
+            width: 100%;
+        }
 
-
+    }
+    .btn-hover.color-2 {
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 
-@keyframes color-change {
-    0% {
-        color: #f5691d;
+    @keyframes color-change {
+        0% {
+            color: #f5691d;
+        }
+
+        33% {
+            color: #d9182e;
+        }
+
+        66% {
+            color: #b50b3b;
+        }
+
+        99% {
+            color: #591148;
+        }
     }
-    33% {
-        color: #d9182e;
-    }
-    66% {
-        color: #b50b3b;
-    }
-    99% {
-        color: #591148;
-    }
-}

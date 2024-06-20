@@ -114,8 +114,8 @@ main {
 }
 .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
   transition: 0.5ms;
-  background: #121212;
-  color: #c81a4e !important;
+  background: white;
+  color: #f5691d !important;
   font-weight: bolder;
 }
 

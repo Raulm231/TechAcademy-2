@@ -24,6 +24,14 @@
   list-style: none;
 }
 
+.mb-3 {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.mb-3 label {
+  color: white;
+}
+
 .btn-hover.color-2 {
   background-image: linear-gradient(to right, #f5691d, #d9182e, #b50b3b, #591148);
   float: right;
@@ -133,6 +141,36 @@ main {
 }
 .carousel-inner .carousel-item img {
   border-radius: 15px;
+}
+
+.botao-contato {
+  float: right;
+  margin-right: 12%;
+  margin-top: 0.5%;
+}
+.botao-contato ul li {
+  display: inline-block;
+}
+.botao-contato ul li a {
+  margin-left: 4px;
+  padding: 11px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #f5691d;
+  color: white;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.botao-contato ul li a:hover {
+  color: #f5691d;
+  background: white;
+  transition: 0.5s;
+  padding: 14px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+}
+.botao-contato input[type=button] {
+  color: white;
 }
 
 .paginaErro {

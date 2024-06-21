@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <base href="http://localhost/droga/TechAcademy-2/">
+  <base href="http://localhost/sjk/TechAcademy-2/">
 
   <link rel="icon" href="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png">
 
@@ -24,7 +24,7 @@
 <body>
   <?php
   //buscar os dados da API de games
-  $url = "https://professorburnes.com.br/stem/api/games.php";
+  $url = "http://localhost/sjk/TechAcademy-2/api/games.php";
   //importar os dados da API
   $dadosApi = file_get_contents($url);
   //transformar de JSON para array ou objeto
@@ -57,7 +57,7 @@
             <ul class="dropdown-menu">
               <?php
               foreach ($dadosJogos as $dados) {
-                echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a>
+                echo "<li><a class='dropdown-item' href='games/{$dados->id}'>{$dados->nome}</a>
               </li>";
               }
               ?>

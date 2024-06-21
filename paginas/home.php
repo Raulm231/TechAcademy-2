@@ -1,5 +1,5 @@
 <?php
-$url = "http://localhost/droga/TechAcademy-2/api/banners.php";
+$url = "http://localhost/sjk/TechAcademy-2/api/banners.php";
 
 $dadosApi = file_get_contents($url);
 
@@ -27,7 +27,7 @@ $dadosBanner = json_decode($dadosApi);
             foreach ($dadosBanner as $dados) {
             ?>
                 <div class="carousel-item active">
-                    <a href="game/<?= $dados->id_game ?>">
+                    <a href="games/<?= $dados->id_game ?>">
                         <img src="<?= $dados->imagem ?>" class="d-block w-100" alt="<?= $dados->nome ?>">
                     </a>
                 </div>
@@ -50,13 +50,35 @@ $dadosBanner = json_decode($dadosApi);
     <h3>TODOS OS JOGOS:</h3>
 
     <br>
+    <?php
 
-    <div class="card" style="width: 18rem;">
-        <img src="imagens/repeido/cc-vertical.jpg" class="card-img-top" alt="..." height="250px">
-        <div class="card-body">
-            <p class="card-text">Crimson Curse</p>
-        </div>
+?>
+</div>
+
+    <div class="row">
+        <?php
+            foreach($dadosJogos as $dados) {
+                ?>
+                <div class="col-12 col-md-4">
+                    <div class="card" data-aos="fade-right">
+                        <img src="<?=$dados->poster?>"
+                        alt="<?=$dados->nome?>" class="card-img-top">
+                        <div class="card-text text-center">
+                            <p><strong><?=$dados->nome?></strong></p>
+                            <div class="grid-jogos">
+                            <p>
+                                <a href="game/<?=$dados->id?>" title="Detalhes do Jogo" class="btn btn-danger">
+                                    <i class="fas fa-search"></i>
+                                    Detalhes
+                                </a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+        ?>
     </div>
 <br>
 <br>
-</div>

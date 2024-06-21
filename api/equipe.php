@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "https://www.professorburnes.com.br/stem/images/";
+    $path = "http://localhost/site/TechAcademy-2/imagens/";
 
     $equipe[1] = array("nome"=>"Luke Skywalker","cargo"=>"Desenvolvedor de Games","foto"=>"{$path}luke.jpg");
     $equipe[2] = array("nome"=>"Obi Wan Kenobi","cargo"=>"Diretor de Arte","foto"=>"{$path}obi.jpg");

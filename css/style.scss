@@ -12,7 +12,12 @@ $fontColor1: rgb(255, 255, 255);
 
 ::-webkit-scrollbar {
     width: 7px;
+    height: 7px;
 }
+::-webkit-scrollbar-corner {
+    background: $colorMenu;
+}
+
 
 ::-webkit-scrollbar-thumb {
     background: #f5691d;
@@ -183,7 +188,7 @@ main {
                 border-radius: 8px;
                 text-decoration: none;  
                 background: #f5691d;
-                color: $fontColor1;
+                color: $fontColor1 !important;
                 transition: 0.3s;
                 font-weight: bold;
 
@@ -202,9 +207,18 @@ main {
         color: $fontColor1;
     }
 }
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
 
 .grid-jogos {
-    
+    width: 10px;
 }
 
 
@@ -272,6 +286,9 @@ footer {
     padding: 10px;
     background-color: $primary;
     color: $fontColor1;
+    position: relative;
+    margin: auto auto;
+
 
     h3 {
         font-size: 21px;

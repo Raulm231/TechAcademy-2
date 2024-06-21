@@ -1,5 +1,6 @@
 <?php
-$url = "http://localhost/sjk/TechAcademy-2/api/banners.php";
+$url = "http://localhost/site/TechAcademy-2/api/banners.php";
+
 
 $dadosApi = file_get_contents($url);
 
@@ -67,10 +68,11 @@ $dadosBanner = json_decode($dadosApi);
                             <p><strong><?=$dados->nome?></strong></p>
                             <div class="grid-jogos">
                             <p>
-                                <a href="game/<?=$dados->id?>" title="Detalhes do Jogo" class="btn btn-danger">
+                                <a href="games/<?=$dados->id?>" title="Detalhes do Jogo" class="btn btn-danger">
                                     <i class="fas fa-search"></i>
                                     Detalhes
                                 </a>
+                                
                             </p>
                             </div>
                         </div>

@@ -2,12 +2,12 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/sjk/TechAcademy-2/imagens/";
+    $path = "http://localhost/site/TechAcademy-2/imagens/";
 
     $games[0] = array("id"=>1, "nome"=>"Desordeon", "descricao"=>"<p></p>
     <p></p>
     <p></p>",
-    "poster"=>"{$path}poster_fallout.jpg","banner"=>"{$path}Des-Banner.png");
+    "poster"=>"{$path}poster_fallout.jpg","banner"=>"{$path}DesordeonBanner.jpeg");
 
     $games[1] = array("id"=>1, "nome"=>"Red Dead 3", "descricao"=>"<p></p>
     <p></p>

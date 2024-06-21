@@ -2,10 +2,10 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "https://www.professorburnes.com.br/stem/images/";
+    $path = "http://localhost/site/TechAcademy-2/imagens/";
 
     $fotos[1] = array(
-        array("foto"=>"{$path}fallout1.jpg"),
+        array("foto"=>"{$path}Des.banner.png"),
         array("foto"=>"{$path}fallout2.jpg"),
         array("foto"=>"{$path}fallout3.jpg"),
         array("foto"=>"{$path}fallout4.jpg"),

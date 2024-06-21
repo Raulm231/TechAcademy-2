@@ -6,6 +6,11 @@
 
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #181818;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -157,7 +162,7 @@ main {
   border-radius: 8px;
   text-decoration: none;
   background: #f5691d;
-  color: white;
+  color: white !important;
   transition: 0.3s;
   font-weight: bold;
 }
@@ -171,6 +176,20 @@ main {
 }
 .botao-contato input[type=button] {
   color: white;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.grid-jogos {
+  width: 10px;
 }
 
 .paginaErro {
@@ -227,6 +246,8 @@ footer {
   padding: 10px;
   background-color: #161616;
   color: white;
+  position: relative;
+  margin: auto auto;
 }
 footer h3 {
   font-size: 21px;

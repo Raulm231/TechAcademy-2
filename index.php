@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <base href="http://localhost/sjk/TechAcademy-2/">
+  <base href="http://localhost/site/TechAcademy-2/">
 
   <link rel="icon" href="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png">
 
@@ -24,7 +24,7 @@
 <body>
   <?php
   //buscar os dados da API de games
-  $url = "http://localhost/sjk/TechAcademy-2/api/games.php";
+  $url = "http://localhost/site/TechAcademy-2/api/games.php";
   //importar os dados da API
   $dadosApi = file_get_contents($url);
   //transformar de JSON para array ou objeto
@@ -34,7 +34,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid" href="index.php">
       <a href="index.php">
-        <img src="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png" width="70px" height="75px">
+        <img src="imagens/icone.png" width="70px" height="75px" alt="Phoenix">
       </a>
 
       <a class="navbar-brand" href="index.php">PHOENIX</a>
@@ -89,6 +89,7 @@
 
     ?>
   </main>
+
   
 
   <footer>

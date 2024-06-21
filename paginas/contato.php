@@ -1,4 +1,5 @@
 <br>
+  <h1>Entre em contato</h1>
 <br>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
@@ -24,7 +25,6 @@
     alert("Seu Comentario foi enviado com Sucesso!");
   }
 </script>
-
 
 <br>
 <br>

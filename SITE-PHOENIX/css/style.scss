@@ -1,0 +1,343 @@
+$primary: #161616;
+$secondary: #c81a4e;
+$colorMenu: #181818;
+$font1: Roboto, Arial, Verdana;
+$fontColor1: rgb(255, 255, 255);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-corner {
+    background: $colorMenu;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #f5691d;
+    border-radius: 10px;
+
+    &:hover {
+        background: #ff8a4b;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: $colorMenu;
+}
+
+.btn-contato {
+    list-style: none;
+}
+
+.mb-3 {
+
+    margin-left: 12%;
+    margin-right: 12%;
+
+    label {
+        color: $fontColor1;
+    }
+
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5691d, #d9182e, #b50b3b, #591148);
+    float: right;
+}
+
+.btn-hover {
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 20px;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 9px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+html {
+    background: #2e2e2e;
+}
+
+main {
+    background-color: #2e2e2e;
+}
+
+.navbar {
+    background-color: $primary;
+    box-sizing: border-box;
+    box-shadow: 0 1px 10px #161616;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    padding-left: 0.5%;
+
+    .navbar-brand {
+        color: $fontColor1;
+        font-weight: bold;
+        font-size: 24px;
+        padding-left: 6px;
+
+        &:hover {
+            color: $fontColor1;
+        }
+
+    }
+
+    .navbar-toggler {
+        background-color: $fontColor1;
+        transition: 0.4s;
+
+        &:active {
+            transition: 0.4s;
+            background-color: #1a1a1a;
+        }
+    }
+
+
+    .navbar-nav {
+        width: auto;
+
+        .nav-item {
+            float: right;
+
+            .nav-link {
+                color: $fontColor1;
+
+                &:hover {
+                    animation: color-change 5s infinite ease-in;
+                }
+            }
+
+            .dropdown-menu {
+                background: $colorMenu;
+                border-radius: 0px 0px 10px 10px;
+                box-sizing: border-box;
+                border-top: 4px solid $fontColor1;
+
+                .dropdown-item {
+                    color: $fontColor1;
+                    transition: 0.5ms;
+
+                    &:hover {
+                        transition: 0.5ms;
+                        background: $fontColor1;
+                        color: #f5691d !important;
+                        font-weight: bolder;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-toggle::after {
+    transition: 0.4s;
+}
+
+.carousel-inner {
+    width: 72%;
+    margin: 0 auto;
+
+    .carousel-item img {
+        border-radius: 15px;
+    }
+}
+
+.botao-contato {
+    float: right;
+    margin-right: 12%;
+    margin-top: 0.5%;
+
+    ul {
+        li {
+            display: inline-block;
+            a {
+                margin-left: 4px;
+                padding: 11px;
+                border-radius: 8px;
+                text-decoration: none;  
+                background: #f5691d;
+                color: $fontColor1 !important;
+                transition: 0.3s;
+                font-weight: bold;
+
+                &:hover {
+                    color: #f5691d;
+                    background: $fontColor1;
+                    transition: 0.5s;
+                    padding: 14px;
+                    border-radius: 12px;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+    input[type=button] {
+        color: $fontColor1;
+    }
+}
+.row {
+    margin: 0 auto;
+}
+
+.grid-jogos {
+    width: 10px;
+}
+
+
+.paginaErro {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    img {
+        padding-bottom: 50px;
+        width: 38%;
+    }
+
+    a {
+
+        border-radius: 16px;
+        text-decoration: none;
+        padding: 15px;
+        background: #f5691d;
+        color: $fontColor1;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f5691d;
+            background: $fontColor1;
+            transition: 0.5s;
+            padding: 20px;
+            border-radius: 22px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+.pgcontato {
+    h1 {
+        text-align: center;
+        color: $fontColor1;
+    }
+
+}
+
+.pghome {
+    font-weight: bold;
+    color: $fontColor1;
+
+    h2 {
+
+        padding-left: 5%;
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 21px;
+        padding-left: 5%;
+    }
+}
+
+.pgQuem {
+    
+    h2 {
+        text-align: center;
+        color: $fontColor1;
+    }
+    p {
+        color: $fontColor1;
+        margin-left: 5%;
+    }
+}
+
+
+
+.divisao {
+    text-align: center;
+    padding-bottom: 1%;
+    color: $fontColor1;
+}
+
+
+footer {
+    text-align: center;
+    bottom: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #161616;
+    width: 100%;
+    padding: 10px;
+    background-color: $primary;
+    color: $fontColor1;
+    position: relative;
+    margin: auto auto;
+
+
+    h3 {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 120px) and (max-width: 430px) {
+    .paginaErro {
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .btn-hover.color-2 {
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #f5691d;
+    }
+
+    33% {
+        color: #d9182e;
+    }
+
+    66% {
+        color: #b50b3b;
+    }
+
+    99% {
+        color: #591148;
+    }
+}

@@ -22,7 +22,7 @@
     <h2 class="text-center">Fotos do Jogo</h2>
     <div class="row">
         <?php
-            $dadosFotos = file_get_contents("http://localhost/TechAcademy-2/SITE%20PHOENIX/imagens/");
+            $dadosFotos = file_get_contents("http://localhost/TechAcademy-2/SITE-PHOENIX/imagens/");
             $dadosFotos = json_decode($dadosFotos);
             //só as fotos do jogo
             $dados = $dadosFotos->$codigo;

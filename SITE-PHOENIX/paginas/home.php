@@ -1,5 +1,5 @@
 <?php
-$url = "http://localhost/TechAcademy-2/SITE%20PHOENIX/api/banners.php";
+$url = "http://localhost/TechAcademy-2/SITE-PHOENIX/api/banners.php";
 
 
 $dadosApi = file_get_contents($url);

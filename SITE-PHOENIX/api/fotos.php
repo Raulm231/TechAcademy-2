@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/TechAcademy-2/SITE%20PHOENIX/imagens/";
+    $path = "http://localhost/TechAcademy-2/SITE-PHOENIX/imagens/";
 
     $fotos[1] = array(
         array("foto"=>"{$path}Des.banner.png"),

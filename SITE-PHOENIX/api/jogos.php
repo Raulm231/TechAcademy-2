@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/TechAcademy-2/SITE%20PHOENIX/jogos/";
+    $path = "http://localhost/TechAcademy-2/SITE-PHOENIX/jogos/";
 
     $jogo[0] = array("id"=>1, "nome"=>"Crimson Curse", "descricao"=>"<p></p>",
     "jogo"=>"{$path}Des-banner.png");

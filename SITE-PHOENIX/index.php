@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <base href="http://localhost/TechAcademy-2/SITE%20PHOENIX/">
+  <base href="http://localhost/TechAcademy-2/SITE-PHOENIX/">
 
   <link rel="icon" href="imagens/_5926fa45-9bda-4fb7-932b-49650c112174 (1).png">
 
@@ -24,7 +24,7 @@
 <body>
   <?php
   //buscar os dados da API de games
-  $url = "http://localhost/TechAcademy-2/SITE%20PHOENIX/api/games.php";
+  $url = "http://localhost/TechAcademy-2/SITE-PHOENIX/api/games.php";
   //importar os dados da API
   $dadosApi = file_get_contents($url);
   //transformar de JSON para array ou objeto
@@ -57,7 +57,7 @@
             <ul class="dropdown-menu">
               <?php
               foreach ($dadosJogos as $dados) {
-                echo "<li><a class='dropdown-item' href='games/{$dados->id}'>{$dados->nome}</a>
+                echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a>
               </li>";
               }
               ?>
@@ -75,7 +75,13 @@
   <main>
     <?php
 
-    $pagina = $_GET["pagina"] ?? "home";
+    $pagina = "home";
+    if (isset($_GET["pagina"])) {
+      $pagina = $_GET["pagina"] ?? "home";
+      $pagina = explode("/", $pagina);
+      $codigo = $pagina[1] ?? NULL; 
+      $pagina = $pagina[0] ?? "home";
+    }
 
     $pagina = "paginas/{$pagina}.php";
 
@@ -84,11 +90,12 @@
     } else {
       include "paginas/erro.php";
     }
+    ?>
 
     ?>
   </main>
 
-  
+
 
   <footer>
     <h3>Site desenvolvido por - Raul Miguel<h3>

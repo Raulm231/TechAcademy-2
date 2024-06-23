@@ -14,6 +14,7 @@ $fontColor1: rgb(255, 255, 255);
     width: 7px;
     height: 7px;
 }
+
 ::-webkit-scrollbar-corner {
     background: $colorMenu;
 }
@@ -182,11 +183,12 @@ main {
     ul {
         li {
             display: inline-block;
+
             a {
                 margin-left: 4px;
                 padding: 11px;
                 border-radius: 8px;
-                text-decoration: none;  
+                text-decoration: none;
                 background: #f5691d;
                 color: $fontColor1 !important;
                 transition: 0.3s;
@@ -203,13 +205,18 @@ main {
             }
         }
     }
+
     input[type=button] {
         color: $fontColor1;
     }
 }
+
 .row {
     margin: 0 auto;
+    color: $fontColor1;
+    
 }
+
 
 .grid-jogos {
     width: 10px;
@@ -271,11 +278,12 @@ main {
 }
 
 .pgQuem {
-    
+
     h2 {
         text-align: center;
         color: $fontColor1;
     }
+
     p {
         color: $fontColor1;
         margin-left: 5%;

@@ -57,7 +57,7 @@
             <ul class="dropdown-menu">
               <?php
               foreach ($dadosJogos as $dados) {
-                echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a>
+                echo "<li><a class='dropdown-item' href='paginas/game/{$dados->id}'>{$dados->nome}</a>
               </li>";
               }
               ?>

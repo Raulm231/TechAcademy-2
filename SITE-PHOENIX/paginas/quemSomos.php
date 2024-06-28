@@ -2,12 +2,12 @@
     <br>
     <h2>Quem Somos</h2>
     <br>
-    <p>Este site foi desenvolvido para o 2 periodo de TADS, e consta com os jogos feitos por alunos.</p>
+    <p>Este site foi desenvolvido para o 2 bimentre de TADS, e consta com os jogos feitos pelos alunos.</p>
 
 
 
 
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="row row-cols-12 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
                 <img src="imagens/1ano.jpg" class="card-img-top" alt="Raul Miguel" height="450px">
@@ -44,6 +44,7 @@
                 </div>
             </div>
         </div>
+        <br>
     </div>
 </div>
 <br>
